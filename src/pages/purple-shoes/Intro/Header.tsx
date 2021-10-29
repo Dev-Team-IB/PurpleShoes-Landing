@@ -6,7 +6,7 @@ import TitleImg from "../img/intro-title.png";
 import ChannelService from "./ChannelService";
 
 ChannelService.boot({
-  "pluginKey": "d13da73d-9607-4933-a1ff-b8cc494c5196"
+  "pluginKey": process.env.REACT_APP_CHANNEL_SERVICE_PLUGIN
 });
 
 // Boot channel service with user info
