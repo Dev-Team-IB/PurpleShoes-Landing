@@ -3,6 +3,24 @@ import { Container, Grid } from "@material-ui/core";
 import MenuIcon from "@material-ui/icons/Menu";
 import styled from "styled-components";
 import TitleImg from "../img/intro-title.png";
+import ChannelService from "./ChannelService";
+
+ChannelService.boot({
+  "pluginKey": "d13da73d-9607-4933-a1ff-b8cc494c5196"
+});
+
+// Boot channel service with user info
+/*
+ChannelService.boot({
+  "pluginKey": "YOUR_PLUGIN_KEY", //please fill with your plugin key
+  "profile": {
+    "name": "YOUR_USER_NAME", //fill with user name
+    "mobileNumber": "YOUR_USER_MOBILE_NUMBER", //fill with user phone number
+    "CUSTOM_VALUE_1": "VALUE_1", //any other custom meta data
+    "CUSTOM_VALUE_2": "VALUE_2"
+  }
+});
+*/
 
 const Header = () => {
   return (
