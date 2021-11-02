@@ -1,0 +1,25 @@
+body {
+}
+center {
+  position: relative;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+
+.main {
+  display: flex;
+  justify-content: center;
+  background-image: url("../images//manager\ service\ use.png");
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: 100% auto;
+  position: relative;
+  max-width: 555px;
+  width: 100%;
+  height: 5099px;
+  margin: 0 auto;
+}

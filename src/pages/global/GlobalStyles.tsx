@@ -11,11 +11,18 @@ const GlobalStyle = createGlobalStyle`
   
   html,
   body {
-    overflow: hidden;
-  }
+    background-color: #e0caea;
 
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+  }
+  #root {
+    width: 100%;
+    height: 100%;
+  }
   * {
-    box-sizing: border-box;
   }
 `;
 
