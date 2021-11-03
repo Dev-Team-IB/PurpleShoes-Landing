@@ -1,5 +1,11 @@
 import styled from "styled-components";
 import serviceImage from "./images/userservice.png";
+import ChannelService from "./ChannelService";
+
+ChannelService.boot({
+  "pluginKey": process.env.REACT_APP_CHANNEL_SERVICE_PLUGIN
+});
+
 const UserService = () => {
   const Container = styled.div`
     display: flex;

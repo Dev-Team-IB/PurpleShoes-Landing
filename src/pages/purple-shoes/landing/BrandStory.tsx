@@ -1,6 +1,13 @@
 import styled from "styled-components";
 
 import serviceImage from "./images/brandstory.png";
+import ChannelService from "./ChannelService";
+
+ChannelService.boot({
+  "pluginKey": process.env.REACT_APP_CHANNEL_SERVICE_PLUGIN
+});
+
+
 const BrandStory = () => {
   const Container = styled.div`
     display: flex;

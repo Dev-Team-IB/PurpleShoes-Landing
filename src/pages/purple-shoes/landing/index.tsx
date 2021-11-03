@@ -6,6 +6,11 @@ import btn2Img from "./images/buttons/btn2.png";
 import btn3Img from "./images/buttons/btn3.png";
 import btn4Img from "./images/buttons/btn4.png";
 import "./css/landingStyles.css";
+import ChannelService from "./ChannelService";
+
+ChannelService.boot({
+  "pluginKey": process.env.REACT_APP_CHANNEL_SERVICE_PLUGIN
+});
 
 const Landing = () => {
   const Main = styled.div`
