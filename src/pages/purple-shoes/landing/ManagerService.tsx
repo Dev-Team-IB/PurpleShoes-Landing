@@ -24,7 +24,7 @@ const ManagerService = () => {
     position: relative;
     max-width: 555px;
     width: 100%;
-    height: 5099px;
+    height: 2296px;
     margin: 0 auto;
   `;
   return (
