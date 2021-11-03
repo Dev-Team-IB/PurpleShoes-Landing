@@ -3,10 +3,11 @@ import serviceImage from "./images/managerservice.png";
 import ChannelService from "./ChannelService";
 
 ChannelService.boot({
-  "pluginKey": process.env.REACT_APP_CHANNEL_SERVICE_PLUGIN
+  pluginKey: process.env.REACT_APP_CHANNEL_SERVICE_PLUGIN,
 });
 
 const ManagerService = () => {
+  window.scrollTo(0, 0);
   const Container = styled.div`
     display: flex;
     justify-content: center;
