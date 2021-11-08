@@ -2,8 +2,9 @@ import { useState } from "react";
 import { Row, Col, Drawer } from "antd";
 import { withTranslation } from "react-i18next";
 import Container from "../../common/Container";
-import { SvgIcon } from "../../common/SvgIcon";
+import { ImageIcon, SvgIcon } from "../../common/SvgIcon";
 import { Button } from "../../common/Button";
+import CommonContent from "../../content/CommonContent.json";
 import {
   HeaderSection,
   LogoContainer,
@@ -48,10 +49,12 @@ const Header = ({ t }: any) => {
         </CustomNavLinkSmall>
         <CustomNavLinkSmall
           style={{ width: "180px" }}
-          onClick={() => scrollTo("contact")}
+          onClick={() => {
+            window.location.href = CommonContent.store;
+          }}
         >
           <Span>
-            <Button>{t("Contact")}</Button>
+            <Button>{t("이용하기")}</Button>
           </Span>
         </CustomNavLinkSmall>
       </>
@@ -63,7 +66,7 @@ const Header = ({ t }: any) => {
       <Container>
         <Row justify="space-between">
           <LogoContainer to="/" aria-label="homepage">
-            <SvgIcon src="logo.svg" width="101px" height="64px" />
+            <ImageIcon src="title1.png" width="128px" height="61px" />
           </LogoContainer>
           <NotHidden>
             <MenuItem />

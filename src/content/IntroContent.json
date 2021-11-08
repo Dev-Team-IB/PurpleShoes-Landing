@@ -1,12 +1,12 @@
 {
-  "title": "Landing page template for developers & startups",
-  "text": "Beautifully designed templates using React.js, ant design and styled-components! Save weeks of time and build your landing page in minutes.",
+  "title": "Purple Shoes ",
+  "text": "안녕하세요 퍼스널 프리미엄 슈케어 서비스 퍼플 슈즈 입니다.",
   "button": [
     {
-      "title": "Explore"
+      "title": "이용하기"
     },
     {
-      "title": "Learn more",
+      "title": "더보기",
       "color": "#fff"
     }
   ]

@@ -10,6 +10,7 @@ import {
   ContentWrapper,
   ButtonWrapper,
 } from "./styles";
+import { JSXElement } from "@babel/types";
 
 const RightBlock = ({
   title,
@@ -25,6 +26,7 @@ const RightBlock = ({
       behavior: "smooth",
     });
   };
+
   return (
     <RightBlockContainer>
       <Fade direction="right">

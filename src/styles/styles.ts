@@ -1,6 +1,20 @@
 import { createGlobalStyle } from "styled-components";
 
 export const Styles = createGlobalStyle`
+    @font-face {
+        font-family: "Gmarket-Sans-Light";
+        src: url("/fonts/Gmarket-Sans-Light.ttf");
+    }
+
+    @font-face {
+        font-family: "Gmarket-Sans-Medium";
+        src: url("/fonts/Gmarket-Sans-Medium.ttf");
+    }
+
+    @font-face {
+        font-family: "Gmarket-Sans-Bold";
+        src: url("/fonts/Gmarket-Sans-Bold.ttf");
+    }
 
     @font-face {
         font-family: "Motiva Sans Light";
@@ -18,7 +32,8 @@ export const Styles = createGlobalStyle`
     body,
     html,
     a {
-        font-family: 'Motiva Sans Light', sans-serif;
+        transform:rotate(-0.03deg);
+        font-family: 'Gmarket-Sans-Medium', sans-serif;
     }
 
 
@@ -57,7 +72,7 @@ export const Styles = createGlobalStyle`
     h4,
     h5,
     h6 {
-        font-family: 'Motiva Sans Bold', serif;
+        font-family: 'Gmarket-Sans-Bold', serif;
         color: #18216d;
         font-size: 56px;
         line-height: 1.18;
