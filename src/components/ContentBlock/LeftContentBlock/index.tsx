@@ -1,6 +1,6 @@
 import { Row, Col } from "antd";
 import { withTranslation } from "react-i18next";
-import { SvgIcon } from "../../../common/SvgIcon";
+import { SvgIcon } from "../../../common/Icon";
 import { ContentBlockProps } from "../types";
 import { Fade } from "react-awesome-reveal";
 import {
@@ -11,6 +11,7 @@ import {
   MinTitle,
   MinPara,
 } from "./styles";
+import Titles from "../../Addons/Titles";
 
 const LeftContentBlock = ({
   icon,
@@ -29,7 +30,7 @@ const LeftContentBlock = ({
           </Col>
           <Col lg={11} md={11} sm={11} xs={24}>
             <ContentWrapper>
-              <h6>{t(title)}</h6>
+              <Titles text={t(title)} type={"h6"} margin={0} />
               <Content>{t(content)}</Content>
               <ServiceWrapper>
                 <Row justify="space-between">

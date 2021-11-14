@@ -1,6 +1,6 @@
 import { Row, Col } from "antd";
 import { withTranslation } from "react-i18next";
-import { SvgIcon } from "../../common/SvgIcon";
+import { ImageIcon, SvgIcon } from "../../common/Icon";
 import Container from "../../common/Container";
 
 import i18n from "i18next";
@@ -51,16 +51,15 @@ const Footer = ({ t }: any) => {
         <Container>
           <Row justify="space-between">
             <Col lg={10} md={10} sm={12} xs={12}>
-              <Language>{t("Contact")}</Language>
-              <Large to="/">{t("Tell us everything")}</Large>
+              <Title>{t("Address")}</Title>
+              <Para>대표 : 권혁찬 | 사업자등록번호: 309-39-00760</Para>
               <Para>
-                {t(`Do you have any question? Feel free to reach out.`)}
+                주소: 서울특별시 마포구 독막로 320, 7층(도화동, 마포 태영
+                데시앙)
               </Para>
-              <a href="mailto:l.qqbadze@gmail.com">
-                <Chat>{t(`Let's Chat`)}</Chat>
-              </a>
+              <Para>통신판매업 신고 면제</Para>
             </Col>
-            <Col lg={8} md={8} sm={12} xs={12}>
+            <Col lg={2} md={2} sm={12} xs={12}>
               <Title>{t("Policy")}</Title>
               <Large to="/" left="true">
                 {t("Application Security")}
@@ -69,59 +68,14 @@ const Footer = ({ t }: any) => {
                 {t("Software Principles")}
               </Large>
             </Col>
-            <Col lg={6} md={6} sm={12} xs={12}>
-              <Empty />
+            <Col lg={2} md={2} sm={12} xs={12}>
+              <Title>{t("Support")}</Title>
               <Large left="true" to="/">
                 {t("Support Center")}
               </Large>
               <Large left="true" to="/">
                 {t("Customer Support")}
               </Large>
-            </Col>
-          </Row>
-          <Row justify="space-between">
-            <Col lg={10} md={10} sm={12} xs={12}>
-              <Empty />
-              <Language>{t("Address")}</Language>
-              <Para>Rancho Santa Margarita</Para>
-              <Para>2131 Elk Street</Para>
-              <Para>California</Para>
-            </Col>
-            <Col lg={8} md={8} sm={12} xs={12}>
-              <Title>{t("Company")}</Title>
-              <Large left="true" to="/">
-                {t("About")}
-              </Large>
-              <Large left="true" to="/">
-                {t("Blog")}
-              </Large>
-              <Large left="true" to="/">
-                {t("Press")}
-              </Large>
-              <Large left="true" to="/">
-                {t("Careers & Culture")}
-              </Large>
-            </Col>
-            <Col lg={6} md={6} sm={12} xs={12}>
-              <Label htmlFor="select-lang">{t("Language")}</Label>
-              <LanguageSwitchContainer>
-                <LanguageSwitch onClick={() => handleChange("en")}>
-                  <SvgIcon
-                    src="united-states.svg"
-                    aria-label="homepage"
-                    width="30px"
-                    height="30px"
-                  />
-                </LanguageSwitch>
-                <LanguageSwitch onClick={() => handleChange("es")}>
-                  <SvgIcon
-                    src="spain.svg"
-                    aria-label="homepage"
-                    width="30px"
-                    height="30px"
-                  />
-                </LanguageSwitch>
-              </LanguageSwitchContainer>
             </Col>
           </Row>
         </Container>
@@ -135,11 +89,11 @@ const Footer = ({ t }: any) => {
           >
             <NavLink to="/">
               <LogoContainer>
-                <SvgIcon
-                  src="logo.svg"
+                <ImageIcon
+                  src="title1.png"
                   aria-label="homepage"
-                  width="101px"
-                  height="64px"
+                  width="128px"
+                  height="61px"
                 />
               </LogoContainer>
             </NavLink>

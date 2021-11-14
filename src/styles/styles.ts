@@ -32,7 +32,6 @@ export const Styles = createGlobalStyle`
     body,
     html,
     a {
-        transform:rotate(-0.03deg);
         font-family: 'Gmarket-Sans-Medium', sans-serif;
     }
 

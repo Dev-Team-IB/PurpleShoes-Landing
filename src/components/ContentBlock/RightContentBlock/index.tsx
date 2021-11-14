@@ -1,6 +1,6 @@
 import { Row, Col } from "antd";
 import { withTranslation } from "react-i18next";
-import { SvgIcon } from "../../../common/SvgIcon";
+import { SvgIcon } from "../../../common/Icon";
 import { Button } from "../../../common/Button";
 import { ContentBlockProps } from "../types";
 import { Fade } from "react-awesome-reveal";
@@ -10,6 +10,7 @@ import {
   ContentWrapper,
   ButtonWrapper,
 } from "./styles";
+import Titles from "../../Addons/Titles";
 import { JSXElement } from "@babel/types";
 
 const RightBlock = ({
@@ -19,6 +20,7 @@ const RightBlock = ({
   icon,
   t,
   id,
+  redirection,
 }: ContentBlockProps) => {
   const scrollTo = (id: string) => {
     const element = document.getElementById(id) as HTMLDivElement;
@@ -33,7 +35,7 @@ const RightBlock = ({
         <Row justify="space-between" align="middle" id={id}>
           <Col lg={11} md={11} sm={11} xs={24}>
             <ContentWrapper>
-              <h6>{t(title)}</h6>
+              <Titles text={t(title)} type={"h6"} />
               <Content>{t(content)}</Content>
               <ButtonWrapper>
                 {typeof button === "object" &&
@@ -43,7 +45,12 @@ const RightBlock = ({
                         key={id}
                         color={item.color}
                         fixedWidth={true}
-                        onClick={() => scrollTo("about")}
+                        onClick={() => {
+                          console.log(item.redirection);
+                          item.redirection
+                            ? (window.location.href = item.redirection)
+                            : scrollTo("about");
+                        }}
                       >
                         {t(item.title)}
                       </Button>

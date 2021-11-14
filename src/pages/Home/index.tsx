@@ -2,9 +2,12 @@ import { lazy } from "react";
 import IntroContent from "../../content/IntroContent.json";
 import MiddleBlockContent from "../../content/MiddleBlockContent.json";
 import AboutContent from "../../content/AboutContent.json";
+import AboutContent2 from "../../content/AboutContent2.json";
+import AboutServiceContent from "../../content/AboutServiceContent.json";
 import MissionContent from "../../content/MissionContent.json";
 import ProductContent from "../../content/ProductContent.json";
 import ContactContent from "../../content/ContactContent.json";
+import ShoesUserContent from "../../content/ShoesUserContent.json";
 import { ContentBlockProps } from "../../components/ContentBlock/types";
 
 const Contact = lazy(() => import("../../components/ContactForm"));
@@ -29,15 +32,23 @@ const Home = () => {
         title={MiddleBlockContent.title}
         content={MiddleBlockContent.text}
         button={MiddleBlockContent.button}
+        redirection={MiddleBlockContent.redirection}
       />
       <ContentBlock
         type="left"
         title={AboutContent.title}
         content={AboutContent.text}
-        section={AboutContent.section}
         icon="graphs.svg"
         id="about"
       />
+      <ContentBlock
+        type="right"
+        title={AboutContent2.title}
+        content={AboutContent2.text}
+        icon="graphs.svg"
+        id="about"
+      />
+      <MiddleBlock title={AboutServiceContent.title} />
       <ContentBlock
         type="right"
         title={MissionContent.title}
@@ -51,6 +62,14 @@ const Home = () => {
         content={ProductContent.text}
         icon="waving.svg"
         id="product"
+      />
+      <ContentBlock
+        type="right"
+        title={ShoesUserContent.title}
+        content={ShoesUserContent.text}
+        button={ShoesUserContent.button}
+        icon="developer.svg"
+        id="ShoesUser"
       />
     </Container>
   );

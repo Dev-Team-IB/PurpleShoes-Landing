@@ -1,16 +1,4 @@
 {
-  "title": "Light, fast & responsive",
-  "text": "명품신발 수선, 어디에 맡겨야 할지 고민이신가요?",
-  "section": [
-    {
-      "title": "Why Antd?",
-      "content": "Ant Design is a React UI library that has a lot of easy-to-use components for building elegant UI.",
-      "icon": "notes.svg"
-    },
-    {
-      "title": "Why styled-components?",
-      "content": "Styled Components gives you total control over your components.",
-      "icon": "notes.svg"
-    }
-  ]
+  "title": "구두방은 꼭 필요할 때만 보이지 않아요...",
+  "text": "출퇴근 길에 분명히 봤는데...\n이사 오기 전 집 근처에는 많았는데..\n시간 내서 신발 수선을 맡기러 가기도,\n찾으러 가기도 애매해요."
 }

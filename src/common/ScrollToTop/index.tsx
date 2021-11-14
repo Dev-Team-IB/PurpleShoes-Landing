@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { SvgIcon } from "../SvgIcon";
+import { SvgIcon } from "../Icon";
 import { ScrollUpContainer } from "./styles";
 import { getScroll } from "../utils/getWindow";
 

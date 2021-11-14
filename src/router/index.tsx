@@ -4,7 +4,11 @@ import Footer from "../components/Footer";
 import Header from "../components/Header";
 import routes from "./config";
 import { Styles } from "../styles/styles";
+import ChannelService from "../ChannelTalk/ChannelService";
 
+ChannelService.boot({
+  pluginKey: process.env.REACT_APP_CHANNEL_SERVICE_PLUGIN,
+});
 const Router = () => {
   return (
     <Suspense fallback={null}>
