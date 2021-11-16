@@ -17,30 +17,48 @@ interface ImageMiddleBlockProps {
   t: any;
   images: ImageProps[];
 }
-
+/*
+const ImageFilter: any = ({
+  images,
+  oddEven,
+}: {
+  images: ImageProps[];
+  oddEven: boolean;
+}) => {
+  let arr: any[] = [];
+  if (oddEven) {
+    images.map((e, i) => {
+      !(i % 2) &&
+        arr.push(<ImageIcon src={e.path} width={e.width} height={e.height} />);
+    });
+  } else {
+    images.map((e, i) => {
+      i % 2 &&
+        arr.push(<ImageIcon src={e.path} width={e.width} height={e.height} />);
+    });
+  }
+  return arr;
+};
+*/
 const ImageMiddleBlock = ({ images }: ImageMiddleBlockProps) => {
   return (
     <MiddleBlockSection>
       <Slide direction="up">
         <Row justify="center" align="middle">
           <ContentWrapper>
-            <Col lg={24} md={24} sm={24} xs={24}>
-              {images.forEach( (e) => <ImageIcon src={e.path} width={e.width} height={e.height} /> }
-            </Col>
+            <ImageIcon src={""} width={""} height={""} />
           </ContentWrapper>
         </Row>
-        <Row justify="center" align="middle">
-          <ContentWrapper>
-            <Col lg={24} md={24} sm={24} xs={24}>
-              {images.forEach((e, i) => {
-                if (!(i % 2))
-                  return (
-                    <ImageIcon src={e.path} width={e.width} height={e.height} />
-                  );
-              })}
-            </Col>
-          </ContentWrapper>
-        </Row>
+      </Slide>
+    </MiddleBlockSection>
+  );
+};
+
+export const ImageMiddleCenterBlock = ({ icon }: { icon: string }) => {
+  return (
+    <MiddleBlockSection style={{ paddingTop: "0px" }}>
+      <Slide direction="up">
+        <ImageIcon src={icon} width={"100%"} height={"100%"} />
       </Slide>
     </MiddleBlockSection>
   );

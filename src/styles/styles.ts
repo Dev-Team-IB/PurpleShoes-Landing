@@ -46,7 +46,7 @@ export const Styles = createGlobalStyle`
     }
 
     a:hover {
-        color: #18216d;
+        color: #451e5d;
     }
 
     input,
@@ -67,7 +67,7 @@ export const Styles = createGlobalStyle`
 
     h1 {
         font-family: 'Gmarket-Sans-Bold', serif;
-        color: #18216d;
+        color: #451e5d;
         font-size: 56px;
         line-height: 1.18;
 
@@ -81,7 +81,7 @@ export const Styles = createGlobalStyle`
     }
     h2 { 
         font-family: 'Gmarket-Sans-Bold', serif;
-        color: #18216d;
+        color: #451e5d;
         font-size: 50px;
         line-height: 1.18;
 
@@ -95,7 +95,7 @@ export const Styles = createGlobalStyle`
     }
     h3 {
         font-family: 'Gmarket-Sans-Bold', serif;
-        color: #18216d;
+        color: #451e5d;
         font-size: 44px;
         line-height: 1.18;
 
@@ -109,7 +109,7 @@ export const Styles = createGlobalStyle`
     }
     h4 {
         font-family: 'Gmarket-Sans-Bold', serif;
-        color: #18216d;
+        color: #451e5d;
         font-size: 38px;
         line-height: 1.18;
 
@@ -123,7 +123,7 @@ export const Styles = createGlobalStyle`
     }
     h5 {
         font-family: 'Gmarket-Sans-Bold', serif;
-        color: #18216d;
+        color: #451e5d;
         font-size: 32px;
         line-height: 1.18;
 
@@ -137,7 +137,7 @@ export const Styles = createGlobalStyle`
     }
     h6{
         font-family: 'Gmarket-Sans-Bold', serif;
-        color: #18216d;
+        color: #451e5d;
         font-size: 26px;
         line-height: 1.18;
 
@@ -151,7 +151,7 @@ export const Styles = createGlobalStyle`
     }
 
     p {
-        color: #18216d;
+        color: #451e5d;
         font-size: 21px;        
         line-height: 1.41;
     }

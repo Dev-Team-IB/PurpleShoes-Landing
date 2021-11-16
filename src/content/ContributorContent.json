@@ -1,0 +1,25 @@
+{
+  "title": "Purple Shoes Participants",
+  "person": [
+    {
+      "name": "권혁찬",
+      "description": "CEO",
+      "image": "Profile/CEO.jpg"
+    },
+    {
+      "name": "민상연",
+      "description": "Developer\n(BackEnd)",
+      "image": "Profile/dev1.jpg"
+    },
+    {
+      "name": "안나경",
+      "description": "Developer\n(FrontEnd)",
+      "image": "Profile/dev2.jpg"
+    },
+    {
+      "name": "이순형",
+      "description": "Developer\n(FrontEnd)",
+      "image": "Profile/dev3.jpg"
+    }
+  ]
+}

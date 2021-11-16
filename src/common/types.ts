@@ -20,6 +20,7 @@ export interface IconProps {
   src: string;
   width: string;
   height: string;
+  style?: any;
 }
 
 export interface InputProps {

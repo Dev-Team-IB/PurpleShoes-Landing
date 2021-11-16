@@ -11,6 +11,7 @@ interface MiddleBlockProps {
   button?: string;
   t: any;
   redirection?: string;
+  style?: any;
 }
 
 const MiddleBlock = ({
@@ -19,6 +20,7 @@ const MiddleBlock = ({
   button,
   t,
   redirection,
+  style,
 }: MiddleBlockProps) => {
   const scrollTo = (id: string) => {
     const element = document.getElementById(id) as HTMLDivElement;
@@ -27,7 +29,7 @@ const MiddleBlock = ({
     });
   };
   return (
-    <MiddleBlockSection>
+    <MiddleBlockSection style={style}>
       <Slide direction="up">
         <Row justify="center" align="middle">
           <ContentWrapper>

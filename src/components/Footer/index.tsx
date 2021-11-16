@@ -92,12 +92,13 @@ const Footer = ({ t }: any) => {
                 <ImageIcon
                   src="title1.png"
                   aria-label="homepage"
-                  width="128px"
-                  height="61px"
+                  width="161px"
+                  height="85px"
                 />
               </LogoContainer>
             </NavLink>
             <FooterContainer>
+              {/* 
               <SocialLink
                 href="https://github.com/Adrinlol/create-react-app-adrinlol"
                 src="github.svg"
@@ -120,6 +121,7 @@ const Footer = ({ t }: any) => {
                   alt="Buy me a pizza"
                 />
               </a>
+              */}
             </FooterContainer>
           </Row>
         </Container>
