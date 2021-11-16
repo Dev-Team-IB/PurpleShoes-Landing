@@ -32,7 +32,7 @@ const MiddleBlock = ({
         <Row justify="center" align="middle">
           <ContentWrapper>
             <Col lg={24} md={24} sm={24} xs={24}>
-              <Titles text={t(title)} type="h6" margin={0} />
+              <Titles text={t(title)} type="h1" margin={0} />
               <Content>{t(content)}</Content>
               {button && (
                 <Button

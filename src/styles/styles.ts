@@ -65,15 +65,80 @@ export const Styles = createGlobalStyle`
         }
     }
 
-    h1,
-    h2,
-    h3,
-    h4,
-    h5,
-    h6 {
+    h1 {
         font-family: 'Gmarket-Sans-Bold', serif;
         color: #18216d;
         font-size: 56px;
+        line-height: 1.18;
+
+        @media only screen and (max-width: 890px) {
+          font-size: 47px;
+        }
+      
+        @media only screen and (max-width: 414px) {
+          font-size: 32px;
+        }
+    }
+    h2 { 
+        font-family: 'Gmarket-Sans-Bold', serif;
+        color: #18216d;
+        font-size: 50px;
+        line-height: 1.18;
+
+        @media only screen and (max-width: 890px) {
+          font-size: 47px;
+        }
+      
+        @media only screen and (max-width: 414px) {
+          font-size: 32px;
+        }
+    }
+    h3 {
+        font-family: 'Gmarket-Sans-Bold', serif;
+        color: #18216d;
+        font-size: 44px;
+        line-height: 1.18;
+
+        @media only screen and (max-width: 890px) {
+          font-size: 47px;
+        }
+      
+        @media only screen and (max-width: 414px) {
+          font-size: 32px;
+        }
+    }
+    h4 {
+        font-family: 'Gmarket-Sans-Bold', serif;
+        color: #18216d;
+        font-size: 38px;
+        line-height: 1.18;
+
+        @media only screen and (max-width: 890px) {
+          font-size: 47px;
+        }
+      
+        @media only screen and (max-width: 414px) {
+          font-size: 32px;
+        }
+    }
+    h5 {
+        font-family: 'Gmarket-Sans-Bold', serif;
+        color: #18216d;
+        font-size: 32px;
+        line-height: 1.18;
+
+        @media only screen and (max-width: 890px) {
+          font-size: 47px;
+        }
+      
+        @media only screen and (max-width: 414px) {
+          font-size: 32px;
+        }
+    }
+    h6{
+        font-family: 'Gmarket-Sans-Bold', serif;
+        color: #18216d;
+        font-size: 26px;
         line-height: 1.18;
 
         @media only screen and (max-width: 890px) {
@@ -91,9 +156,6 @@ export const Styles = createGlobalStyle`
         line-height: 1.41;
     }
 
-    h1 {
-        font-weight: 600;
-    }
 
     a {
         text-decoration: none;

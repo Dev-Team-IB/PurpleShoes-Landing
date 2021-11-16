@@ -35,7 +35,7 @@ const RightBlock = ({
         <Row justify="space-between" align="middle" id={id}>
           <Col lg={11} md={11} sm={11} xs={24}>
             <ContentWrapper>
-              <Titles text={t(title)} type={"h6"} />
+              <Titles text={t(title)} type={"h3"} />
               <Content>{t(content)}</Content>
               <ButtonWrapper>
                 {typeof button === "object" &&

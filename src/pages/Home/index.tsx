@@ -4,11 +4,14 @@ import MiddleBlockContent from "../../content/MiddleBlockContent.json";
 import AboutContent from "../../content/AboutContent.json";
 import AboutContent2 from "../../content/AboutContent2.json";
 import AboutServiceContent from "../../content/AboutServiceContent.json";
+import AboutImageContent from "../../content/AboutImageContent.json";
 import MissionContent from "../../content/MissionContent.json";
 import ProductContent from "../../content/ProductContent.json";
 import ContactContent from "../../content/ContactContent.json";
 import ShoesUserContent from "../../content/ShoesUserContent.json";
+import ShoesManagerContent from "../../content/ShoesManagerContent.json";
 import { ContentBlockProps } from "../../components/ContentBlock/types";
+import ImageMiddleBlock from "../../components/ImageMiddleBlock";
 
 const Contact = lazy(() => import("../../components/ContactForm"));
 const MiddleBlock = lazy(() => import("../../components/MiddleBlock"));
@@ -49,27 +52,23 @@ const Home = () => {
         id="about"
       />
       <MiddleBlock title={AboutServiceContent.title} />
-      <ContentBlock
-        type="right"
-        title={MissionContent.title}
-        content={MissionContent.text}
-        icon="product-launch.svg"
-        id="mission"
-      />
-      <ContentBlock
-        type="left"
-        title={ProductContent.title}
-        content={ProductContent.text}
-        icon="waving.svg"
-        id="product"
-      />
+      <ImageMiddleBlock images={AboutImageContent.image} />
+
       <ContentBlock
         type="right"
         title={ShoesUserContent.title}
         content={ShoesUserContent.text}
         button={ShoesUserContent.button}
         icon="developer.svg"
-        id="ShoesUser"
+        id="user"
+      />
+      <ContentBlock
+        type="left"
+        title={ShoesManagerContent.title}
+        content={ShoesManagerContent.text}
+        button={ShoesManagerContent.button}
+        icon="developer.svg"
+        id="manager"
       />
     </Container>
   );
