@@ -1,0 +1,14 @@
+{
+  "title": "Purple Shoes ",
+  "text": "안녕하세요 퍼스널 프리미엄 슈케어 서비스 퍼플 슈즈 입니다.",
+  "button": [
+    {
+      "title": "이용하기",
+      "redirection": "https://smartstore.naver.com/purpleshoes"
+    },
+    {
+      "title": "더보기",
+      "color": "#fff"
+    }
+  ]
+}
