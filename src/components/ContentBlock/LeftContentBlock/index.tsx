@@ -14,6 +14,7 @@ import {
 } from "./styles";
 import Titles from "../../Addons/Titles";
 import { ButtonWrapper } from "../RightContentBlock/styles";
+import ChannelService from "../../../ChannelTalk/ChannelService";
 
 const LeftContentBlock = ({
   icon,
@@ -50,10 +51,13 @@ const LeftContentBlock = ({
                         color={item.color}
                         fixedWidth={true}
                         onClick={() => {
-                          console.log(item.redirection);
-                          item.redirection
-                            ? (window.location.href = item.redirection)
-                            : scrollTo("about");
+                          if (item.redirection === "ChannelTalk") {
+                            ChannelService.lounge();
+                          } else {
+                            item.redirection
+                              ? (window.location.href = item.redirection)
+                              : scrollTo("about");
+                          }
                         }}
                       >
                         {t(item.title)}
