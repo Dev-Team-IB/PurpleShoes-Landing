@@ -44,6 +44,9 @@ class ChannelService {
   boot(settings) {
     window.ChannelIO("boot", settings);
   }
+  lounge() {
+    window.ChannelIO("lounge");
+  }
 
   shutdown() {
     window.ChannelIO("shutdown");

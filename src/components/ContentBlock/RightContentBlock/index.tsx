@@ -12,6 +12,7 @@ import {
 } from "./styles";
 import Titles from "../../Addons/Titles";
 import { JSXElement } from "@babel/types";
+import ChannelService from "../../../ChannelTalk/ChannelService";
 
 const RightBlock = ({
   title,
@@ -46,10 +47,13 @@ const RightBlock = ({
                         color={item.color}
                         fixedWidth={true}
                         onClick={() => {
-                          console.log(item.redirection);
-                          item.redirection
-                            ? (window.location.href = item.redirection)
-                            : scrollTo("about");
+                          if (item.redirection === "ChannelTalk") {
+                            ChannelService.lounge();
+                          } else {
+                            item.redirection
+                              ? (window.location.href = item.redirection)
+                              : scrollTo("about");
+                          }
                         }}
                       >
                         {t(item.title)}
